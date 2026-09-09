@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio educativo sobre arquitectura de computadores, redes de comunicaciones y aplicación en la investigación de ciberdelitos."
+    />
+    <title>Arquitectura, Redes y Ciberdelitos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a class="brand" href="#home" aria-label="Ir al inicio">
+          <span class="brand-mark">A</span>
+          <span>Arquitectura, Redes y Ciberdelitos</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-group">
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Inicio</a></li>
+            <li><a href="#module1">Módulo 1</a></li>
+            <li><a href="#module2">Módulo 2</a></li>
+            <li><a href="#module3">Módulo 3</a></li>
+            <li><a href="#conclusions">Conclusiones</a></li>
+          </ul>
+
+          <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+              ☀️
+            </button>
+            <button id="export-pdf" class="pdf-button" type="button">📄 Exportar a PDF</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="hero section">
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Fundamentos tecnológicos para el estudio digital</span>
+            <h1>Arquitectura, Redes y Ciberdelitos</h1>
+            <p class="hero-subtitle">Fundamentos tecnológicos para el análisis e investigación forense digital</p>
+            <p class="hero-description">
+              Comprender cómo funcionan los computadores, las redes y la memoria permite al investigador
+              de ciberdelitos interpretar evidencias digitales y comprender cómo se generan, almacenan y
+              transmiten los datos.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" type="button" data-scroll-target="#module1">Explorar contenido</button>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Representación visual de infraestructura tecnológica">
+            <div class="device-scene">
+              <div class="server-panel">
+                <div class="screen-glow"></div>
+                <div class="screen-ui">
+                  <span class="signal signal-1"></span>
+                  <span class="signal signal-2"></span>
+                  <span class="signal signal-3"></span>
+                  <span class="cpu-core"></span>
+                </div>
+              </div>
+              <div class="network-lines">
+                <span class="node node-a"></span>
+                <span class="node node-b"></span>
+                <span class="node node-c"></span>
+                <span class="node node-d"></span>
+              </div>
+              <div class="data-stream">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="shield-badge">🔒</div>
+              <div class="evidence-card">Evidencia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section">
+        <div class="container reveal">
+          <div class="section-heading center">
+            <span class="eyebrow">Introducción</span>
+            <h2>Un enfoque práctico para comprender la evidencia digital</h2>
+          </div>
+          <div class="intro-grid">
+            <article class="intro-card">
+              <h3>Arquitectura</h3>
+              <p>
+                La arquitectura de computadores describe cómo se organizan sus componentes para ejecutar
+                instrucciones, almacenar información y procesar datos con precisión.
+              </p>
+            </article>
+            <article class="intro-card">
+              <h3>Redes</h3>
+              <p>
+                Las redes permiten conectividad, intercambio de información y análisis del tráfico como
+                evidencia para entender la comunicación entre dispositivos.
+              </p>
+            </article>
+            <article class="intro-card">
+              <h3>Ciberdelitos</h3>
+              <p>
+                En investigación digital, un caso se entiende mejor cuando se relacionan eventos del
+                procesador, memoria y red para reconstruir la secuencia de un incidente.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="module1" class="module section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Módulo 1</span>
+            <h2>Arquitectura y Estructura de Computadores</h2>
+          </div>
+
+          <article class="module-intro reveal">
+            <p>
+              La arquitectura de computadores estudia cómo se organiza una máquina para interpretar
+              instrucciones, realizar cálculos, acceder a la memoria y coordinar sus elementos. Es
+              fundamental para comprender no solo el funcionamiento del equipo, sino también la forma en
+              que la evidencia digital puede ser capturada y analizada.
+            </p>
+          </article>
+
+          <div class="cpu-section reveal">
+            <h3>Componentes principales de la CPU</h3>
+            <div class="card-grid cpu-grid">
+              <article class="info-card interactive-card active" data-card="alu" tabindex="0">
+                <div class="card-icon">🧮</div>
+                <h4>ALU — Unidad Aritmético-Lógica</h4>
+                <p>
+                  Realiza operaciones matemáticas y lógicas como suma, resta, comparación y validación de
+                  condiciones.
+                </p>
+              </article>
+
+              <article class="info-card interactive-card" data-card="uc" tabindex="0">
+                <div class="card-icon">🎛️</div>
+                <h4>UC — Unidad de Control</h4>
+                <p>
+                  Coordina cada instrucción, decide qué componente debe actuar y sincroniza la ejecución.
+                </p>
+              </article>
+
+              <article class="info-card interactive-card" data-card="regs" tabindex="0">
+                <div class="card-icon">⚡</div>
+                <h4>Registros</h4>
+                <p>
+                  Almacenan temporalmente instrucciones, datos y direcciones que la CPU necesita acceder de
+                  forma inmediata.
+                </p>
+              </article>
+            </div>
+
+            <div class="card-detail reveal" id="cpu-detail">
+              <h4>ALU — Unidad Aritmético-Lógica</h4>
+              <p>
+                La ALU es la parte de la CPU encargada de ejecutar cálculos y comparaciones. Es esencial
+                porque cada operación que realiza un computador, desde abrir un archivo hasta validar una
+                contraseña, termina pasando por esta unidad.
+              </p>
+              <ul>
+                <li>Permite sumar, restar, comparar, evaluar condiciones y realizar operaciones binarias.</li>
+                <li>Los resultados se envían a registros o a la memoria según la instrucción.</li>
+                <li>Es una de las piezas centales del procesamiento digital.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="instruction-section reveal">
+            <h3>Ciclo de instrucción</h3>
+            <div class="pipeline-diagram" aria-label="Diagrama del ciclo Fetch Decode Execute">
+              <div class="pipeline-node memory">MEMORIA</div>
+              <div class="pipeline-arrow">↓</div>
+              <div class="pipeline-node fetch active">FETCH</div>
+              <div class="pipeline-arrow">↓</div>
+              <div class="pipeline-node decode">DECODE</div>
+              <div class="pipeline-arrow">↓</div>
+              <div class="pipeline-node execute">EXECUTE</div>
+              <div class="pipeline-arrow">↓</div>
+              <div class="pipeline-node result">RESULTADO</div>
+              <div class="pipeline-arrow">↓</div>
+              <div class="pipeline-node next">Siguiente instrucción</div>
+            </div>
+
+            <div class="cycle-controls">
+              <button class="step-btn primary-btn" type="button" id="advance-cycle">Siguiente paso</button>
+            </div>
+            <div class="cycle-detail" id="cycle-detail">
+              <strong>FETCH</strong>
+              <p>La CPU obtiene la siguiente instrucción desde la memoria para prepararla y ejecutarla.</p>
+            </div>
+          </div>
+
+          <div class="memory-hierarchy reveal">
+            <h3>Jerarquía de memoria</h3>
+            <div class="memory-pyramid">
+              <button class="memory-level active" type="button" data-memory="registers">
+                <span>Registros</span>
+              </button>
+              <button class="memory-level" type="button" data-memory="cache">
+                <span>Cache</span>
+              </button>
+              <button class="memory-level" type="button" data-memory="ram">
+                <span>RAM</span>
+              </button>
+              <button class="memory-level" type="button" data-memory="secondary">
+                <span>Almacenamiento secundario</span>
+              </button>
+            </div>
+
+            <div id="memory-detail" class="memory-detail" aria-live="polite">
+              <h4>Registros</h4>
+              <p>
+                Son la memoria más rápida y cercana a la CPU. Almacena datos y direcciones que necesitan ser
+                procesados inmediatamente.
+              </p>
+              <ul>
+                <li>Velocidad: muy alta</li>
+                <li>Capacidad: muy pequeña</li>
+                <li>Función: acceso inmediato</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="module2" class="module section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Módulo 2</span>
+            <h2>Fundamentos de Redes de Comunicaciones</h2>
+          </div>
+
+          <article class="module-intro reveal">
+            <p>
+              Una red de computadores es un conjunto de dispositivos conectados para compartir información,
+              recursos y servicios. En el contexto de la ciberseguridad, el tráfico de red es una fuente
+              clave de evidencia, ya que refleja quién se comunicó con quién, cuándo y cómo.
+            </p>
+          </article>
+
+          <div class="card-grid network-components reveal">
+            <article class="info-card mini-card">
+              <div class="card-icon">💻</div>
+              <h4>Computadores</h4>
+            </article>
+            <article class="info-card mini-card">
+              <div class="card-icon">🖥️</div>
+              <h4>Servidores</h4>
+            </article>
+            <article class="info-card mini-card">
+              <div class="card-icon">🔀</div>
+              <h4>Switches</h4>
+            </article>
+            <article class="info-card mini-card">
+              <div class="card-icon">🛣️</div>
+              <h4>Routers</h4>
+            </article>
+            <article class="info-card mini-card">
+              <div class="card-icon">📡</div>
+              <h4>Medios</h4>
+            </article>
+            <article class="info-card mini-card">
+              <div class="card-icon">🌐</div>
+              <h4>IP</h4>
+            </article>
+            <article class="info-card mini-card">
+              <div class="card-icon">🪪</div>
+              <h4>MAC</h4>
+            </article>
+          </div>
+
+          <div class="network-map reveal">
+            <div class="network-node">Computador A</div>
+            <div class="network-arrow">↓</div>
+            <div class="network-node">Switch</div>
+            <div class="network-branch">
+              <span>PC B</span>
+              <span>PC C</span>
+            </div>
+            <div class="network-arrow">↓</div>
+            <div class="network-node">Router</div>
+            <div class="network-arrow">↓</div>
+            <div class="network-node">Internet</div>
+            <div class="data-packets" aria-hidden="true">
+              <span class="packet p-1"></span>
+              <span class="packet p-2"></span>
+              <span class="packet p-3"></span>
+            </div>
+          </div>
+
+          <div class="comparison-section reveal">
+            <h3>Dirección IP vs Dirección MAC</h3>
+            <div class="ip-mac-toggle">
+              <button class="toggle-btn active" type="button" data-address-type="ip">IP</button>
+              <button class="toggle-btn" type="button" data-address-type="mac">MAC</button>
+            </div>
+
+            <div class="comparison-grid">
+              <div class="comparison-card address-card active" data-panel="ip">
+                <h4>Dirección IP</h4>
+                <p>Es una dirección lógica que identifica un dispositivo dentro de una red.</p>
+                <code>192.168.1.10</code>
+                <ul>
+                  <li>Puede cambiar según la configuración.</li>
+                  <li>Se usa para enrutar paquetes.</li>
+                </ul>
+              </div>
+
+              <div class="comparison-card address-card" data-panel="mac">
+                <h4>Dirección MAC</h4>
+                <p>Es una dirección física asociada a la interfaz de red del dispositivo.</p>
+                <code>00:1A:2B:3C:4D:5E</code>
+                <ul>
+                  <li>Es única dentro de la capa local.</li>
+                  <li>Se usa para identificar la interfaz de red.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comparison-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>IP</th>
+                    <th>MAC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tipo</td>
+                    <td>Lógica</td>
+                    <td>Física</td>
+                  </tr>
+                  <tr>
+                    <td>Identificación</td>
+                    <td>Red/dispositivo</td>
+                    <td>Interfaz de red</td>
+                  </tr>
+                  <tr>
+                    <td>Ejemplo</td>
+                    <td>192.168.1.10</td>
+                    <td>00:1A:2B:3C:4D:5E</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="topologies reveal">
+            <h3>Topologías de red</h3>
+            <div class="topology-grid">
+              <article class="topology-card active" data-topology="estrella">
+                <h4>Estrella</h4>
+                <pre>
+       PC
+        |
+PC — SWITCH — PC
+        |
+       PC</pre>
+                <p>Facilita la gestión y el diagnóstico, pero depende mucho del switch central.</p>
+              </article>
+
+              <article class="topology-card" data-topology="anillo">
+                <h4>Anillo</h4>
+                <pre>
+PC → PC → PC
+↑         ↓
+← ← ← ← ←</pre>
+                <p>Las señales viajan en secuencia; fallas pueden afectar a toda la red si se interrumpe el anillo.</p>
+              </article>
+
+              <article class="topology-card" data-topology="bus">
+                <h4>Bus</h4>
+                <pre>
+PC   PC   PC   PC
+ |    |    |    |
+====================
+      Bus</pre>
+                <p>Simple y económico, pero menos tolerante a fallos y con más colisiones.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="module3" class="module section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Módulo 3</span>
+            <h2>Aplicación en la Investigación de Ciberdelitos</h2>
+          </div>
+
+          <blockquote class="research-quote reveal">
+            En una investigación de ciberdelitos, comprender cómo funcionan la memoria, el procesador y las
+            redes permite interpretar correctamente las evidencias digitales y establecer qué información
+            pudo estar disponible durante un incidente.
+          </blockquote>
+
+          <div class="evidence-grid reveal">
+            <article class="evidence-card">
+              <h3>Importancia de la RAM</h3>
+              <p>
+                La RAM puede contener evidencia volátil: procesos activos, conexiones de red, archivos temporales
+                y datos útiles durante un incidente antes de que se borren.
+              </p>
+              <div class="flow-visual">
+                <span>Computador encendido</span>
+                <span>↓</span>
+                <span>RAM</span>
+                <span>↓</span>
+                <span>Procesos + conexiones + datos temporales</span>
+                <span>↓</span>
+                <span>Posible evidencia volátil</span>
+              </div>
+            </article>
+
+            <article class="evidence-card">
+              <h3>Importancia de los registros</h3>
+              <p>
+                Los registros reflejan instrucciones, direcciones y estados de procesamiento actual del sistema,
+                ayudando a reconstruir qué estaba ocurriendo de forma inmediata.
+              </p>
+            </article>
+
+            <article class="evidence-card">
+              <h3>Importancia del tráfico de red</h3>
+              <p>
+                El tráfico de red muestra comunicaciones, protocolos y destinos implicados en una actividad,
+                aportando contexto sobre origen, destino y posible exfiltración.
+              </p>
+              <div class="flow-visual small">
+                <span>Dispositivo A</span>
+                <span>↓</span>
+                <span>Tráfico</span>
+                <span>↓</span>
+                <span>Red</span>
+                <span>↓</span>
+                <span>Dispositivo B</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="three-perspectives reveal">
+            <h3>¿Qué observa un investigador?</h3>
+            <div class="perspectives">
+              <div class="perspective-item">
+                <span>CPU / Registros</span>
+                <small>Estado y procesamiento de la CPU</small>
+              </div>
+              <div class="perspective-item">
+                <span>RAM</span>
+                <small>Información volátil durante la ejecución</small>
+              </div>
+              <div class="perspective-item">
+                <span>Tráfico de red</span>
+                <small>Comunicaciones entre dispositivos</small>
+              </div>
+            </div>
+            <p class="focus-line">Analizar diferentes fuentes de evidencia permite construir una visión más completa de lo ocurrido.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="activities section reveal">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Actividades interactivas</span>
+            <h2>Practica conceptos clave</h2>
+          </div>
+
+          <div class="activity-grid">
+            <article class="activity-card">
+              <h3>Actividad 1 — CPU</h3>
+              <p id="cpu-activity-text">Instrucción: cargar datos desde memoria y ejecutar comparación.</p>
+              <div class="activity-step" id="cpu-activity-step">Fetch</div>
+              <button class="primary-btn" type="button" id="cpu-activity-btn">Avanzar</button>
+            </article>
+
+            <article class="activity-card">
+              <h3>Actividad 2 — Memoria</h3>
+              <div class="choice-list memory-choices">
+                <button class="choice-btn active" type="button" data-memory-choice="Registro">Registro</button>
+                <button class="choice-btn" type="button" data-memory-choice="Cache">Cache</button>
+                <button class="choice-btn" type="button" data-memory-choice="RAM">RAM</button>
+                <button class="choice-btn" type="button" data-memory-choice="SSD/HDD">SSD/HDD</button>
+              </div>
+              <div class="choice-detail" id="memory-choice-detail">La CPU accede a registros de forma inmediata y muy rápida.</div>
+            </article>
+
+            <article class="activity-card">
+              <h3>Actividad 3 — Redes</h3>
+              <div class="choice-list network-choices">
+                <button class="choice-btn active" type="button" data-network-choice="IP">IP</button>
+                <button class="choice-btn" type="button" data-network-choice="MAC">MAC</button>
+              </div>
+              <div class="choice-detail" id="network-choice-detail">La IP identifica un dispositivo dentro de la red según la configuración.</div>
+            </article>
+
+            <article class="activity-card">
+              <h3>Actividad 4 — Topologías</h3>
+              <div class="choice-list topology-choices">
+                <button class="choice-btn active" type="button" data-topology-choice="Estrella">Estrella</button>
+                <button class="choice-btn" type="button" data-topology-choice="Anillo">Anillo</button>
+                <button class="choice-btn" type="button" data-topology-choice="Bus">Bus</button>
+              </div>
+              <div class="choice-detail" id="topology-choice-detail">En estrella, todos los nodos se conectan a un punto central.</div>
+            </article>
+
+            <article class="activity-card quiz-card">
+              <h3>Actividad 5 — Ciberdelitos</h3>
+              <p>¿Qué tipo de información podría ser útil durante una investigación?</p>
+              <div class="choice-list quiz-choices">
+                <button class="choice-btn" type="button" data-quiz-choice="RAM">RAM</button>
+                <button class="choice-btn" type="button" data-quiz-choice="Registros">Registros</button>
+                <button class="choice-btn" type="button" data-quiz-choice="Tráfico de red">Tráfico de red</button>
+                <button class="choice-btn correct" type="button" data-quiz-choice="Todas las anteriores">Todas las anteriores</button>
+              </div>
+              <div class="choice-detail" id="quiz-feedback">Selecciona la respuesta más completa.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="conclusions" class="section conclusion-section">
+        <div class="container reveal">
+          <div class="section-heading center">
+            <span class="eyebrow">Conclusiones</span>
+            <h2>Ideas clave</h2>
+          </div>
+
+          <div class="conclusion-grid">
+            <article class="conclusion-card">
+              <h3>1. Comprender la máquina</h3>
+              <p>La arquitectura del computador explica cómo se procesan instrucciones, datos y señales.</p>
+            </article>
+            <article class="conclusion-card">
+              <h3>2. Entender la comunicación</h3>
+              <p>Las redes muestran cómo se transmiten y gestionan los datos entre dispositivos.</p>
+            </article>
+            <article class="conclusion-card">
+              <h3>3. Analizar evidencia</h3>
+              <p>La memoria, registros y tráfico aportan información complementaria para una investigación.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Arquitectura, Redes y Ciberdelitos</h3>
+          <p>
+            Sitio web educativo desarrollado para el aprendizaje de fundamentos de arquitectura de
+            computadores, redes de comunicaciones e informática forense.
+          </p>
+        </div>
+        <div class="footer-links">
+          <p><strong>Año:</strong> <span id="current-year"></span></p>
+          <p><strong>Tecnologías:</strong> HTML5, CSS3 y JavaScript</p>
+          <a href="#module1">Módulo 1</a>
+          <a href="#module2">Módulo 2</a>
+          <a href="#module3">Módulo 3</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
