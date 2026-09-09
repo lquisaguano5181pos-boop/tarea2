@@ -272,6 +272,14 @@ body.dark-theme .site-header {
   font-weight: 700;
 }
 
+.hero-author,
+.footer-author {
+  margin-top: 0.9rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .hero-description {
   margin-top: 1rem;
   max-width: 62ch;
